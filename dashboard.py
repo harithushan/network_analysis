@@ -1010,7 +1010,7 @@ def main():
     st.markdown("""
     <div style='text-align: center; color: #64748b; margin-top: 2rem;'>
     <p>🔬 Network Analysis Dashboard | Built with Streamlit & NetworkX | 
-    📊 Data: Disease-Symptom Associations | 🎯 Focus: Medical Network Science</p>
+    📊 Disease-Symptom Analysis</p>
     </div>
     """, unsafe_allow_html=True)
 
