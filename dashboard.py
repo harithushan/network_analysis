@@ -841,75 +841,24 @@ def create_overview_tab(data):
         <h4>🏆 Most Influential Nodes</h4>
         <strong>Top Disease:</strong> {top_disease['Node']} (Degree: {top_disease['Degree']})<br>
         <strong>Top Symptom:</strong> {top_symptom['Node']} (Degree: {top_symptom['Degree']})<br><br>
+        </div>
+        """, unsafe_allow_html=True)
         
+    with col2:
+        st.markdown(f"""
+        <div class="insight-box">
         <h4>🌐 Network Structure</h4>
         <strong>Sparsity:</strong> {data['statistics']['Density'].iloc[0]:.6f} - indicating specific disease-symptom relationships<br>
         <strong>Communities:</strong> {data['statistics']['Louvain_Communities'].iloc[0]} distinct clusters detected<br>
         <strong>Modularity:</strong> {data['statistics']['Louvain_Modularity'].iloc[0]:.3f} - showing good community separation
+        # Network visualization preview
         </div>
         """, unsafe_allow_html=True)
-    
-    with col2:
-        # Network visualization preview
         st.markdown("### 📸 Network Preview")
         preview_path = Path("output") / "visualizations" / "louvain_communities.png"
         if preview_path.exists():
             display_image_with_caption(preview_path, "Community Structure Visualization")
-        
-        # Quick stats
-        st.markdown("### 📈 Quick Statistics")
-        stats_summary = data['summary']
-        
-        for _, row in stats_summary.iterrows():
-            if row['metric'] in ['Total Nodes', 'Total Edges', 'Network Density', 'Louvain Communities']:
-                st.metric(row['metric'], row['value'])
-    
-    # Methodology
-    st.markdown("### 🔬 Analysis Methodology")
-    
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        st.markdown("""
-        **🌐 Network Construction**
-        - Bipartite graph creation
-        - Disease-symptom edge mapping
-        - Node type classification
-        - Graph validation
-        """)
-    
-    with col2:
-        st.markdown("""
-        **📊 Centrality Analysis**
-        - Degree centrality calculation
-        - Betweenness centrality analysis
-        - Closeness centrality measurement
-        - Comparative ranking
-        """)
-    
-    with col3:
-        st.markdown("""
-        **👥 Community Detection**
-        - Louvain algorithm application
-        - Leiden algorithm comparison
-        - Modularity optimization
-        - Community characterization
-        """)
-    
-    # Navigation guide
-    st.markdown("### 🧭 Dashboard Navigation Guide")
-    
-    st.markdown("""
-    <div class="success-box">
-    <strong>🚀 How to Use This Dashboard:</strong><br><br>
-    
-    <strong>📋 Overview:</strong> Start here for project summary and key findings<br>
-    <strong>🌐 Network Visualization:</strong> Explore interactive network visualizations<br>
-    <strong>📈 Centrality Analysis:</strong> Discover most important diseases and symptoms<br>
-    <strong>👥 Community Detection:</strong> Examine disease-symptom clusters<br>
-    <strong>🔬 Advanced Analytics:</strong> Perform custom analysis and export data
-    </div>
-    """, unsafe_allow_html=True)
+
 
 def main():
     """Main dashboard application"""
