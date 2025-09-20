@@ -1,0 +1,21 @@
+Algorithm,Community_ID,Size,Diseases,Symptoms,Modularity,Disease_Sample,Symptom_Sample
+Louvain,0,142,109,33,0.5947566294314015,panic disorder; depression; poisoning due to ethylene glycol,anxiety and nervousness; depressive or psychotic symptoms; breathing fast; insomnia; abnormal involuntary movements
+Louvain,1,130,103,27,0.5947566294314015,metabolic disorder; sick sinus syndrome; atelectasis,shortness of breath; chest tightness; palpitations; irregular heartbeat; dizziness
+Louvain,2,147,96,51,0.5947566294314015,vocal cord polyp; pyloric stenosis; salivary gland disorder,throat feels tight; hoarse voice; sore throat; difficulty in swallowing; toothache
+Louvain,8,110,77,33,0.5947566294314015,cellulitis or abscess of mouth; lymphedema; ingrown toe nail,throat swelling; abnormal appearing skin; skin growth; lip swelling; irregular appearing scalp
+Louvain,5,89,60,29,0.5947566294314015,turner syndrome; cryptorchidism; atrophic vaginitis,emotional symptoms; symptoms of the scrotum and testes; swelling of scrotum; suprapubic pain; painful urination
+Louvain,3,187,131,56,0.5947566294314015,headache after lumbar puncture; vaginitis; pyelonephritis,vaginal itching; vaginal discharge; nausea; vomiting; jaundice
+Louvain,7,181,121,60,0.5947566294314015,fracture of the hand; osteochondrosis; injury to the knee,arm pain; arm stiffness or tightness; hand or finger swelling; hand or finger stiffness or tightness; wrist stiffness or tightness
+Louvain,6,86,58,28,0.5947566294314015,eye alignment disorder; glaucoma; diabetic retinopathy,eye deviation; double vision; cross-eyed; symptoms of eye; pain in eye
+Louvain,4,14,8,6,0.5947566294314015,breast cancer; fibrocystic breast disease; metastatic cancer,pain or soreness of breast; vaginal dryness; lump or mass of breast; bleeding or discharge from nipple; mouth dryness
+Louvain,9,11,10,1,0.5947566294314015,scurvy; vitamin a deficiency; aspergillosis,knee lump or mass
+Leiden,4,134,107,27,N/A,panic disorder; amyloidosis; panic attack,shortness of breath; chest tightness; palpitations; irregular heartbeat; breathing fast
+Leiden,3,140,108,32,N/A,depression; eating disorder; substance-related mental disorder,anxiety and nervousness; depressive or psychotic symptoms; insomnia; abnormal involuntary movements; abusing alcohol
+Leiden,5,120,90,30,N/A,tension headache; drug withdrawal; irritable bowel syndrome,nausea; vomiting; jaundice; sharp abdominal pain; upper abdominal pain
+Leiden,1,151,95,56,N/A,testicular cancer; premenstrual tension syndrome; subacute thyroiditis,symptoms of the scrotum and testes; swelling of scrotum; suprapubic pain; vaginal itching; painful urination
+Leiden,8,15,8,7,N/A,galactorrhea of unknown cause; mastectomy; breast infection (mastitis),pain or soreness of breast; vaginal dryness; lump or mass of breast; bleeding or discharge from nipple; mouth dryness
+Leiden,2,149,98,51,N/A,asthma; chronic obstructive pulmonary disease (copd); acute bronchospasm,throat swelling; throat feels tight; hoarse voice; sore throat; difficulty in swallowing
+Leiden,6,112,79,33,N/A,abscess of the lung; drug reaction; vasculitis,abnormal appearing skin; skin growth; lip swelling; irregular appearing scalp; itchy eyelid
+Leiden,0,180,120,60,N/A,fracture of the rib; rhabdomyolysis; pain disorder affecting the neck,arm pain; arm stiffness or tightness; hand or finger swelling; hand or finger stiffness or tightness; wrist stiffness or tightness
+Leiden,9,11,10,1,N/A,aspergillosis; malaria; carcinoid syndrome,knee lump or mass
+Leiden,7,85,58,27,N/A,cryptococcosis; central retinal artery or vein occlusion; migraine,eye deviation; double vision; cross-eyed; symptoms of eye; pain in eye

@@ -1,0 +1,15 @@
+metric,value
+Total Nodes,1097
+Total Edges,5388
+Disease Nodes,773
+Symptom Nodes,324
+Network Density,0.008963
+Average Degree,9.82
+Max Degree,135
+Min Degree,1
+Average Clustering,0.0089
+Louvain Communities,10
+Leiden Communities,10
+Louvain Modularity,0.595
+Top Disease (Degree),depression (0.0529)
+Top Symptom (Degree),sharp abdominal pain (0.1232)

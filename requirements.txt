@@ -1,1 +1,10 @@
 pandas
+pyvis
+networkx
+streamlit
+matplotlib
+python-igraph 
+leidenalg
+seaborn
+plotly
+python-louvain

@@ -1,0 +1,21 @@
+�   .gitignore
+�   LICENSE
+�   main.py
+�   README.md
+�   README_tree.md
+�   requirements.txt
+�   temp_tree.txt
+�   
+����data
+�       Final_Augmented_dataset_Diseases_and_Symptoms.csv
+�       processed_data1.csv
+�       processed_data2.csv
+�       processed_data3.csv
+�       processed_data4.csv
+�       processed_data5.csv
+�       
+����notebooks
+           network_analysis_v1.ipynb
+           network_analysis_v2.ipynb
+
+            
