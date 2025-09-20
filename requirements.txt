@@ -8,3 +8,5 @@ leidenalg
 seaborn
 plotly
 python-louvain
+scipy
+nbformat>=4.2.0
