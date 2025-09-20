@@ -1,8 +1,6 @@
 import pandas as pd
 
-chunk_size = 50000  # Number of rows per chunk
-for i, chunk in enumerate(pd.read_csv('data/Final_Augmented_dataset_Diseases_and_Symptoms.csv', chunksize=chunk_size)):
-    # Process each chunk here (e.g., filter rows, aggregate data)
+chunk_size = 50000
+for i, chunk in enumerate(pd.read_csv('data/Final_Augmented_dataset_Diseases_and_Symptoms.csv', chunksize=chunk_size), start= 1):
     print(f"Processing chunk with {len(chunk)} rows.")
-    # Example: Save processed chunks to a new CSV
-    chunk.to_csv(f'data/processed_data{i+1}.csv', mode='a', header=False, index=False)
+    chunk.to_csv(f'data/processed_data{i}.csv', mode='a', header=True, index=False)
