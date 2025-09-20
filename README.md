@@ -11,3 +11,10 @@ venv\Scripts\activate
 ```cmd
 pip install -r requirements.txt
 ```
+```cmd
+python data_processor.py
+```
+
+```cmd
+streamlit run dashboard.py
+````0
