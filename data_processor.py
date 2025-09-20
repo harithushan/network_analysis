@@ -85,7 +85,7 @@ def detect_communities(B):
         leiden_partition_map = {G_ig.vs[i]["name"]: comm for i, comm in enumerate(leiden_partition.membership)}
         print(f"✅ Leiden completed: {len(leiden_partition)} communities")
     except Exception as e:
-        print(f"⚠️  Leiden failed: {e}. Using Louvain results for Leiden as well.")
+        print(f"Leiden failed: {e}. Using Louvain results for Leiden as well.")
         leiden_partition_map = louvain_partition.copy()
         leiden_partition = list(set(louvain_partition.values()))
     
